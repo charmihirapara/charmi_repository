@@ -1,0 +1,69 @@
+Git :
+ First we have to install GIT
+ - Command : sudo apt-get install git
+ - Make directory : mkdir dir_git
+ make configure email & Username
+ - git config --global user.name 'Charmi'
+ - git config --global user.email 'charmi@aum.bz'
+ - git config --global user.color 'auto'
+ make one File in vi editor Create & Save it
+ After fire this command
+ - git status
+ Here our file isn't go in git So we have to add it
+ - git add <file name>
+ - git status
+ remove file from dir_git <Not out local System>
+ - git rm --cached <filename>
+ commit files on git
+ - git commit -m "<Message>"
+ Show History
+ - git log
+ Show the History with file's Contain
+ - git S
+ Delete Branch From Local
+ - git branch -d <Branch Name>
+ Delete Branch From Remotely
+ - git push <remote> --delete <branch>
+
+
+20-09-2022 : Tuesday
+* Some Basic Commands :
+- git remote : Show the remotes
+- git remote add <remote> <url> : Connect to git remotely
+- git status : Show the Which files are tracked & which is not
+- git clone <url> : Get Git Project from GitHub <server>
+- git pull <remote> <repository> : Get that file which have changed from git (Multiple Users work in One Repository)
+- git push -u <remote> <repository> : Make that file which we have changed on git
+- git add <file_name> : Add the file
+- git branch : Show the Branches
+- git branch <branch_name> : Create new Branch
+- git checkout <branch_name> : Move in this Branch
+- git commit -m "<message>" : Give the message to files which push in git
+- git log : Show the git history
+- git push origin <branch_name> : Branch move on remote
+
+
+
+
+- Login on GitHub
+- First Create Repository in github
+- We have to add Repository using Remote in Terminal [Not make readme]
+- So, here we have to open Terminal and Add Command : git remote add origin git@github.com:charmihirapara/charmi_repository.git [We have to     clone this URL from GitHub]
+- Here We have to create SSH Key Using Terminal
+- So, We have to add this command in Terminal : $ssh-keygen -t rsa -b 4096 -C "charmi@aum.bz" [Email which we ahve register]
+- Create Agenet For this Command : $ eval $(ssh-agent -s)
+- Add Identity  For this Command : $ ssh-add ~/.ssh/id_rsa
+- We can see the SSH key For this Command :  tail ~/.ssh/id_rsa.pub {Copy it}
+- On Github We have to go Setting -> SSH Key Generate -> Name of SSH Key and Paste it textbox
+- Finally Push Our Code on GitHUb Cloud Using This Commad : git push -u origin master <Branch_name>
+
+* When we have to ignore some files to tracked in git, yes we can :
+    -one file create that is .gitignore
+        - command : touch .gitignore
+    -Any files/Dir we have to just ignore to tracked that's file name we have to write in .gitignoer
+
+
+
+
+
+
