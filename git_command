@@ -27,7 +27,22 @@ Git :
 
 
 20-09-2022 : Tuesday
+
+- Login on GitHub
+- First Create Repository in github
+- We have to add Repository using Remote in Terminal [Not make readme]
+- So, here we have to open Terminal and Add Command : git remote add origin git@github.com:charmihirapara/charmi_repository.git [We have to     clone this URL from GitHub]
+- Here We have to create SSH Key Using Terminal
+- So, We have to add this command in Terminal : $ssh-keygen -t rsa -b 4096 -C "charmi@aum.bz" [Email which we ahve register]
+- Create Agenet For this Command : $ eval $(ssh-agent -s)
+- Add Identity  For this Command : $ ssh-add ~/.ssh/id_rsa
+- We can see the SSH key For this Command :  tail ~/.ssh/id_rsa.pub {Copy it}
+- On Github We have to go Setting -> SSH Key Generate -> Name of SSH Key and Paste it textbox
+- Finally Push Our Code on GitHUb Cloud Using This Commad : git push -u origin master <Branch_name>
+
+
 * Some Basic Commands :
+- git init : Inistlize empty git repository
 - git remote : Show the remotes
 - git remote add <remote> <url> : Connect to git remotely
 - git status : Show the Which files are tracked & which is not
@@ -42,25 +57,20 @@ Git :
 - git log : Show the git history
 - git push origin <branch_name> : Branch move on remote
 
-
-
-
-- Login on GitHub
-- First Create Repository in github
-- We have to add Repository using Remote in Terminal [Not make readme]
-- So, here we have to open Terminal and Add Command : git remote add origin git@github.com:charmihirapara/charmi_repository.git [We have to     clone this URL from GitHub]
-- Here We have to create SSH Key Using Terminal
-- So, We have to add this command in Terminal : $ssh-keygen -t rsa -b 4096 -C "charmi@aum.bz" [Email which we ahve register]
-- Create Agenet For this Command : $ eval $(ssh-agent -s)
-- Add Identity  For this Command : $ ssh-add ~/.ssh/id_rsa
-- We can see the SSH key For this Command :  tail ~/.ssh/id_rsa.pub {Copy it}
-- On Github We have to go Setting -> SSH Key Generate -> Name of SSH Key and Paste it textbox
-- Finally Push Our Code on GitHUb Cloud Using This Commad : git push -u origin master <Branch_name>
-
 * When we have to ignore some files to tracked in git, yes we can :
     -one file create that is .gitignore
         - command : touch .gitignore
     -Any files/Dir we have to just ignore to tracked that's file name we have to write in .gitignoer
+
+* Simple Flow of git commands : [After Install & Configure git/GitHub]
+    - git init                      ----- Inistlize empty repository
+    - create File/Directory         ----- mkdir / vi
+    - git status                    ----- see the track are clean or not
+    - git branch                    ----- see the branch
+    - git checkout -b <branchname>  ----- Create new Branch
+    - git add <filename>            ----- Add file on tracked
+    - git commit -m "Meassge"       ----- Messge to tracked files
+    - git push <remote> <branch>    ----- Putting files On Cloud
 
 
 
