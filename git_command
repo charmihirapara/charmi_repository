@@ -54,7 +54,7 @@ Git :
 - git branch : Show the Branches
 - git branch <branch_name> : Create new Branch
 - git checkout <branch_name> : Move in this Branch
-- git commit -m "<message>" : Give the message to files which push in git
+- git commit -m "<message>" : Give the message to files which push in git / Take Snapshots which we have make changes in files
 - git log : Show the git history
     Options :
         - git log -10 : Return last 10 commits
@@ -79,6 +79,13 @@ Git :
     - git add <filename>            ----- Add file on tracked
     - git commit -m "Meassge"       ----- Messge to tracked files
     - git push <remote> <branch>    ----- Putting files On Cloud
+
+
+21-09-2022 : Wednesday
+* Some basic Commands :
+- git revert <commit_id> : It returns commited files changes like Undo
+- git reset <commit_id> : It retuen commited files changes like Redo
+- git checkout -- . | <file_name> : It returns uncommited files changes like Undo
 
 
 
