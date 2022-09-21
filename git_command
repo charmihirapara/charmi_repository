@@ -47,6 +47,7 @@ Git :
 - git remote add <remote> <url> : Connect to git remotely
 - git status : Show the Which files are tracked & which is not
 - git clone <url> : Get Git Project from GitHub <server>
+- git clone -b <branch_name><url> : Repository Clone with Specific Branch
 - git pull <remote> <repository> : Get that file which have changed from git (Multiple Users work in One Repository)
 - git push -u <remote> <repository> : Make that file which we have changed on git
 - git add <file_name> : Add the file
