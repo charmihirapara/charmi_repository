@@ -67,7 +67,7 @@ Git :
     - create File/Directory         ----- mkdir / vi
     - git status                    ----- see the track are clean or not
     - git branch                    ----- see the branch
-    - git checkout -b <branchname>  ----- Create new Branch
+    - git checkout -b <branchname>  ----- Create new Branch & Move it
     - git add <filename>            ----- Add file on tracked
     - git commit -m "Meassge"       ----- Messge to tracked files
     - git push <remote> <branch>    ----- Putting files On Cloud
