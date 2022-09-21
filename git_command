@@ -55,6 +55,11 @@ Git :
 - git checkout <branch_name> : Move in this Branch
 - git commit -m "<message>" : Give the message to files which push in git
 - git log : Show the git history
+    Options :
+        - git log -10 : Return last 10 commits
+        - git log --after 2022-07-12 : Return commit after 12th July, 2022
+        - git log --author="aum" : Return specific author \'s commit
+        - git log --grep="Commit-" : Return text wise commit
 - git push origin <branch_name> : Branch move on remote
 - git merge <branch_name> : Merge Branches
 
