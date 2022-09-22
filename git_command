@@ -50,7 +50,7 @@ Git :
 - git clone -b <branch_name><url> : Repository Clone with Specific Branch
 - git pull <remote> <repository> : Get that file which have changed from git (Multiple Users work in One Repository)
 - git push -u <remote> <repository> : Make that file which we have changed on git
-- git add <file_name> : Add the file
+- git add <file_name> : Add the file on git
 - git branch : Show the Branches
 - git branch <branch_name> : Create new Branch
 - git checkout <branch_name> : Move in this Branch
@@ -63,7 +63,7 @@ Git :
         - git log --grep="Commit-" : Return text wise commit
 - git push origin <branch_name> : Branch move on remote
 - git merge <branch_name> : Merge Branches
-- git cherry_pick <commit_id> : make that commit in current branch
+- git cherry-pick <commit_id> : make that commit in current branch
 
 * When we have to ignore some files to tracked in git, yes we can :
     -one file create that is .gitignore
