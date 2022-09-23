@@ -1,0 +1,28 @@
+23-09-2022 : Friday
+Nginx Install
+- sudo apt-get install nginx
+- sudo ufw enble [Firewall enble]
+- nginx -v [Version]
+- sudo ufw app list [Nginx Application]
+- sudo ufw allow [nginx allow '<Application name>']
+- sudo ufw status
+- sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
+
+
+Configuration of Nginx :
+- First we have to move on /etc/nginx/sites-enable directory
+- In sites-enabled have default file [Copy it]
+- We ahve to create another directory in root directory and create 1 file and paste it
+- we have to move /etc/nginx/nginx.conf file and change the include file path [Here write that path which is created file in home directory]
+- we have link the config file & new_default file usinf ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
+- remove sites-enabled default file & sites-available default file
+
+Virtual Host : 
+- First we created one file in /var/www/..
+- After that we have copy default file of sites-availble directory for our new file using cp command
+- make changes that file which we have copied ...in root <our file path> , server_name <we want to used anything> [In server file default_server also remove]
+- Link to enable * using ln -s command we have to link our server file to /etc/nginx/sites-enabled directory
+- open nginx-conf file using vi /etc/nginx/nginx.conf and remove # from server_names_hash_bucket_size 64;
+- in /etc/hosts file has we can add our IP addres and Domain name
+- After nginx -t for check that no Error in our configuration
+- Than restart nginx server using : systemctl restart nginx

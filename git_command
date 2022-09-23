@@ -99,6 +99,17 @@ Nginx Install
 - sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
 
 
+Configuration of Nginx :
+- First we have to move on /etc/nginx/sites-enable directory
+- In sites-enabled have default file [Copy it]
+- We ahve to create another directory in root directory and create 1 file and paste it
+- we have to move /etc/nginx/nginx.conf file and change the include file path [Here write that path which is created file in home directory]
+- we have link the config file & new_default file usinf ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
+- remove sites-enabled default file & sites-available default file
+
+
+
+
 
 
 
