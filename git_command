@@ -88,6 +88,17 @@ Git :
 - git checkout -- . | <file_name> : It returns uncommited files changes like Undo
 
 
+23-09-2022 : Friday
+Nginx Install
+- sudo apt-get install nginx
+- sudo ufw enble [Firewall enble]
+- nginx -v [Version]
+- sudo ufw app list [Nginx Application]
+- sudo ufw allow [nginx allow '<Application name>']
+- sudo ufw status
+- sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
+
+
 
 
 
