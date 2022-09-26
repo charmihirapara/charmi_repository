@@ -1,7 +1,7 @@
 23-09-2022 : Friday
 Nginx Install
 - sudo apt-get install nginx
-- sudo ufw enble [Firewall enble]
+- sudo ufw enable [Firewall enble]
 - nginx -v [Version]
 - sudo ufw app list [Nginx Application]
 - sudo ufw allow [nginx allow '<Application name>']
@@ -26,3 +26,7 @@ Virtual Host :
 - in /etc/hosts file has we can add our IP addres and Domain name
 - After nginx -t for check that no Error in our configuration
 - Than restart nginx server using : systemctl restart nginx
+
+
+
+sudo systemctl enable nginx && sudo systemctl restart nginx
