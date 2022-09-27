@@ -30,3 +30,20 @@ Virtual Host :
 
 
 sudo systemctl enable nginx && sudo systemctl restart nginx
+
+
+27-09-2022 : Tuesday
+
+Http Authentication on Nginx Server using OpenSSl Utilities
+- First we have to make Authentication File in /etc/nginx/
+- .htpasswd create in /etc/nginx/.htpasswd
+- Create Username & Password using Following Command :
+    - sudo sh -c "echo -n 'sammy:' >> /etc/nginx/.htpasswd" [Create Username]
+    - sudo sh -c "openssl passwd -apr1 >> /etc/nginx/.htpasswd" [For Password]
+- cat /etc/nginx/.htpasswd [See the Username & Passsword]
+- After we have to configure our Password file on server
+    - we have to open /etc/nginx/sites-enebled/default in favourite editor
+    - This two lines Add where we have to generate Auth
+        auth_basic "Restricted Content";
+        auth_basic_user_file /etc/nginx/.htpasswd;
+- Restart the nginx and run in browser
