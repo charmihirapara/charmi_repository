@@ -1,0 +1,14 @@
+Install Mariadb Client/Server in Linux :
+
+    - sudo apt update
+    - sudo apt install mariadb-server mariadb-client
+    - sudo systemctl stop mariadb.service
+    - sudo systemctl start mariadb.service
+    - sudo systemctl enable mariadb.service
+    - sudo mysql_secure_installation
+    - sudo systemctl restart mariadb.service
+    - sudo mysql -u root -p [Set Username & Password]
+    - show databases; [Built-in Database show]
+    - create database test; [Create new Database]
+
+
