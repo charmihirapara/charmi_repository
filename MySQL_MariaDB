@@ -18,3 +18,19 @@ Installation of MySQL Workbench :
 
 Issue Generate in Make Connection :
     - ALTER USER 'root'@'localhost' IDENTIFIED VIA mysql_native_password USING PASSWORD('root');
+
+
+
+03/10/2022 : Monday
+
+- Create new User in MySQL Other than root :
+    - Following Commands for create new User in MySQL/MariaDB :
+        - Show Databases; [Show the All database of MySQL]
+        - use mysql;
+        - select user,host,plugin from user;
+        - create user 'charmi'@'localhost' identified by '<Password>';
+        - grant all privileges on *.* to 'charmi'@'localhost';
+        - flush privileges;
+    - Here we have create new user for MySQL ..
+    - mysql -u 'charmi' -p for move in MySQL using new Username & Password
+
