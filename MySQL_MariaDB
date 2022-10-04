@@ -89,7 +89,58 @@ Issue Generate in Make Connection :
 - Date Function :
     -   CURREBT_DATE(),SYSDATE(),NOW(),DATE(),MONTH(),MONTHNAME(),YEAR(),QUARTER(),DAY(),DAYOFMONTH(),DAYNAME(),DAYOFWEEK(),DAYOFYEAR(),
         WEEK(),WEEKDAY(),YEARWEEK(),LAST_DAY(),EXTRACT(),ADDDATE(INTERVAL),DATE_ADD(),MKDATE(),SUBDATE(),DATEDIFF(),TO_DAYS(),FROM_DAYS(),
-        PERIOD_ADD(),PERIOD_DIFF(),DATE_FORMAT(),STR_TO_DATE(),
+        PERIOD_ADD(),PERIOD_DIFF(),DATE_FORMAT(),STR_TO_DATE()
+
+- Alter Command :
+    - ALTER TABLE customer
+    - ADD COLUMN Email VARCHAR(255);
+
+    - ALTER TABLE customer
+    - MODIFY COLUMN Email INT(10);
+
+    - ALTER TABLE customer
+    - CHANGE Email Email_id VARCHAR(255);
+
+    - ALTER TABLE CUstomer_info
+    - rename Customer_info;
+
+    - ALTER TABLE Customer_info
+    - DROP COLUMN Email_id;
+
+    - ALTER TABLE Customer_info
+    - MODIFY Email VARCHAR(255) AFTER name;
+
+    - ALTER TABLE Customer_info
+    - AUTO_INCREMENT = 6;
+
+- DROP/Truncate Table :
+    - Truncate Table lecturer;
+    - DROP table lecturer;
+
+- View :
+    - Used for lengthy Query on MySQL.
+    - We can Insert, Alter, Drop VIew.
+
+    - CREATE VIEW showdata
+        AS
+        SELECT c.name,c.address,p.pname,p.price FROM Customer_info c INNER JOIN
+        product p ON c.pid = p.pid;
+
+    - ALTER VIEW showdata
+        AS
+        SELECT c.name,c.address,p.pname,p.price FROM Customer_info c INNER JOIN
+        product p ON c.pid = p.pid;
+
+    - SELECT * FROM showdata; [for use view]
+    - Rename Table showdata to show_data ;
+    - Drop VIEW show_data;
+
+- Index :
+    - To Serching on Condition fastly
+    Example :
+        - CREATE Index <Index_Name> ON <table_name> (<Column_name>)
+        - CREATE INDEX addShow ON Customer_info (mobile);
+        - Show INDEX FROM Customer_info <Table_name>;
 
 
 
