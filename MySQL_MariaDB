@@ -113,6 +113,9 @@ Issue Generate in Make Connection :
     - ALTER TABLE Customer_info
     - AUTO_INCREMENT = 6;
 
+    - ALTER TABLE <table_name> add Index <index_name> (<COLUMN_NAME>)
+    - ALTER TAble <Table_name> drop Index <index_name>
+
 - DROP/Truncate Table :
     - Truncate Table lecturer;
     - DROP table lecturer;
@@ -142,7 +145,11 @@ Issue Generate in Make Connection :
         - CREATE INDEX addShow ON Customer_info (mobile);
         - Show INDEX FROM Customer_info <Table_name>;
 
+- Create New table from Exisiting table :
+    - CREATE TABLE lecturer AS SELECT id, name, address from Customer_info;
 
+- Clone Table :
+    - Create table <table_name> Like <Exisitng_table_name>
 
 
 
