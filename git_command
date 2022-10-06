@@ -47,14 +47,20 @@ Git :
 - git remote add <remote> <url> : Connect to git remotely
 - git status : Show the Which files are tracked & which is not
 - git clone <url> : Get Git Project from GitHub <server>
+- git clone -b <branch_name><url> : Repository Clone with Specific Branch
 - git pull <remote> <repository> : Get that file which have changed from git (Multiple Users work in One Repository)
 - git push -u <remote> <repository> : Make that file which we have changed on git
-- git add <file_name> : Add the file
+- git add <file_name> : Add the file on git
 - git branch : Show the Branches
 - git branch <branch_name> : Create new Branch
 - git checkout <branch_name> : Move in this Branch
 - git commit -m "<message>" : Give the message to files which push in git / Take Snapshots which we have make changes in files
 - git log : Show the git history
+    Options :
+        - git log -10 : Return last 10 commits
+        - git log --after 2022-07-12 : Return commit after 12th July, 2022
+        - git log --author="aum" : Return specific author \'s commit
+        - git log --grep="Commit-" : Return text wise commit
 - git push origin <branch_name> : Branch move on remote
 - git merge <branch_name> : Merge Branches
 - git cherry-pick <commit_id> : make that commit in current branch
@@ -82,6 +88,31 @@ Git :
 - git checkout -- . | <file_name> : It returns uncommited files changes like Undo
 
 
+<<<<<<< HEAD
+=======
+23-09-2022 : Friday
+Nginx Install
+- sudo apt-get install nginx
+- sudo ufw enble [Firewall enble]
+- nginx -v [Version]
+- sudo ufw app list [Nginx Application]
+- sudo ufw allow [nginx allow '<Application name>']
+- sudo ufw status
+- sudo systemctl status nginx [Here Use Start, Stop, Restart Insted of status]
+
+
+Configuration of Nginx :
+- First we have to move on /etc/nginx/sites-enable directory
+- In sites-enabled have default file [Copy it]
+- We ahve to create another directory in root directory and create 1 file and paste it
+- we have to move /etc/nginx/nginx.conf file and change the include file path [Here write that path which is created file in home directory]
+- we have link the config file & new_default file usinf ln command : [ln -s <where new_deafult file is> <where nginx.conf file is>]
+- remove sites-enabled default file & sites-available default file
+
+
+
+
+>>>>>>> dev
 
 
 
