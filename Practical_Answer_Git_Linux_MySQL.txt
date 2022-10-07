@@ -1,0 +1,44 @@
+Linux : 
+	1. Relative VS Absoulate path : -> Relative move root to Destination directory Using [/]
+					-> Absoulate Move current to Destinatopn directory Using[cd | ..]
+	2. chmod & chown -> To change Permission & Owner
+	3. Uniq : -> Find uniq from Duplicate content
+	   Sort : -> Sorting content Asc & Desc
+	   Diff : -> Compare two file
+	4. grep/egrep : -> find content using words 
+			-> grep has used regular Expression & egrep has used extended regular expression
+			-> grep -B 4 "you" pract1.txt [return match content with first 4 line]
+	5. find : -> find files from directory
+		  -> find /home/ -type d -name "*.txt"
+	6. sed : -> Find & replace, search, Inseration, Deletion
+		 -> sed 's/Linux/Unix/' abc.txt
+	7. awk : -> print specific content from file
+		 -> awk '{print $NF}' abc.txt
+	8. curl : -> show header content of URL
+	   wget	: -> Download file from server
+	9. rsync : -> Used for copy one remote to another remote
+	10. : screen : -> Used for create multiple screen to ruuning backend process
+	11. : crontab : -> Used for make Scheduling Task
+			-> crontab -e [Create cron tab]
+			-> crontab -l [Show Cron tabs]
+	12. : ssh, etc..
+
+GIT : 
+	1. Config User & Password : git config --global user.email ''
+				    git config --global user.password ''
+	2. create branch : git branch dev
+	3. create new file & Directory
+	4. difference between before commit & After commit
+	5. push it edv : git push origin dev
+	6. cherry-pick : Used for our branch commit make to another branch
+	7. pull : git pull origin master
+	- rebase : checkout from master to dev and rebase it [git rebase master]
+	8. without commit move to master [git stash] & [git stash pop in master]-->Make dev branch changes to master branch
+	9. Conflict during pull : open conflict file make some change & Commit it.
+	10. git status stage : 
+	11. remove change when added in git : git reset --hard
+	12. Clone URL : git clone <url>
+	13. create & Delete Branch : git branch <branch_name>
+			    Delete : git branch -d <branch_name>
+	14. Merge all commits : git rebase <branch_name>
+	
