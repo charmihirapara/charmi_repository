@@ -4,4 +4,5 @@ JavaScript 07/10/2022
 	- Datatype
 	- Varible Scope
 	- Loops
-	- Alert, Confirm, Prompt box 
+	- Alert, Confirm, Prompt box
+	- typeof() -> It return type of varible Like [String, Bool, Int] 
