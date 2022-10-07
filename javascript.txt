@@ -1,0 +1,7 @@
+JavaScript 07/10/2022
+
+07/10/2022 : Basic JavaScript
+	- Datatype
+	- Varible Scope
+	- Loops
+	- Alert, Confirm, Prompt box 
