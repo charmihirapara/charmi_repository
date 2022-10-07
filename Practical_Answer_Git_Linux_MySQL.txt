@@ -122,12 +122,14 @@ MySQL : [07/10/2022-Friday]
 			- SELECT WEEK("2022-10-10") AS Week;
 	    - JOINS:
             	- Use all related/ref. table in join
-			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,l.name AS Location, c.name AS Category 				FROM Product p 
+			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,l.name AS Location, c.name AS Category
+			   FROM Product p
 			   JOIN User u ON p.user_id = u.user_id 
 			   JOIN Location l ON p.location_id = l.location_id
 			   JOIN Category c ON p.category_id = c.category_id;
 		- List active user's active products (That show all product details, including location name, category and user details
-			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,u.email AS Email,l.name AS Location, c				.name AS Category FROM Product p 
+			- SELECT p.id, p.product_name,p.price AS Price,u.name AS Users,u.email AS Email,l.name AS Location, c
+			   .name AS Category FROM Product p
 			   JOIN User u ON p.user_id = u.user_id 
 			   JOIN Location l ON p.location_id = l.location_id
 			   JOIN Category c ON p.category_id = c.category_id WHERE p.status = 'A';
